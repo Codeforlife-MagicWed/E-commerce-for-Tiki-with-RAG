@@ -1,8 +1,8 @@
 # E-commerce Chatbot for Tiki using RAG
----
+
 
 ## Overview
----
+
 
 This project builds a Vietnamese E-commerce Chatbot for the Tiki platform using a Retrieval-Augmented Generation (RAG) framework.  
 The system combines hybrid retrieval techniques with instruction-tuned Large Language Models (LLMs) to provide accurate, grounded, and context-aware responses.
@@ -17,7 +17,7 @@ The chatbot supports:
 
 
 ## Dataset
----
+
 
 Data was collected directly from the Tiki platform:
 
@@ -44,7 +44,7 @@ Data was collected directly from the Tiki platform:
 All data is stored in structured JSON format and processed before indexing.
 
 ## System Architecture
----
+
 
 The RAG pipeline consists of five main components:
 
@@ -66,7 +66,6 @@ This hybrid design improves both semantic understanding and exact keyword matchi
 
 
 ## Language Models
----
 
 Three LLMs were evaluated and fine-tuned using LoRA:
 
@@ -84,7 +83,7 @@ Training setup:
 
 
 ## Results
----
+
 
 **PhoGPT**
 - Fluent Vietnamese responses  
@@ -106,7 +105,7 @@ Qwen-based models significantly outperformed PhoGPT in complex product queries.
 
 
 ## Hallucination Control
----
+
 
 To ensure reliability and factual consistency:
 
@@ -119,7 +118,7 @@ To ensure reliability and factual consistency:
 
 
 ## Conclusion
----
+
 
 This project demonstrates that combining hybrid retrieval (BGE-M3 + BM25 + RRF) with instruction-tuned LLMs provides a scalable and production-ready solution for Vietnamese e-commerce chatbots.
 
